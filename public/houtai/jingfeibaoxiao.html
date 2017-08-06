@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/jingfeibaoxiao.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/date.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jingfeibaoxiao.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+		<title>无标题文档</title>
+		<!--[if lte IE 8]>
+			<style type="text/css">
+				.content ul li .zxjf {
+					width: 431px;
+				}
+				.bumen_input{
+				width: 169px;
+			}
+			#txtBeginDate{
+				width: 187px;
+			}
+			.content .heji ul .xiaoxie{
+				width:97px;
+			}
+			</style>
+		<![endif]-->
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<div class="title">
+			<ul>
+				<li>
+					上张
+				</li>
+				<li>
+					下张
+				</li>
+				<li>
+					新增
+				</li>
+				<li>
+					保存
+				</li>
+				<li>
+					审核
+				</li>
+				<li>
+					删除
+				</li>
+				<li>
+					查找
+				</li>
+				<li>
+					打印
+				</li>
+				<li>
+					退出
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="title_bg xinxi">
+				<ul>
+					<li>
+						<span class="left_text"><span class="star">*</span>部门</span>
+						<input type="text" class="bumen_input" />
+					</li>
+					<li style="position: relative;z-index: 3;">
+						<span class="left_text"><span class="star">*</span>日期</span>
+						<input type="text" name="" id="txtBeginDate" value="" />
+					</li>
+					<li>
+						<span class="left_text"><span class="star">*</span>单据编号</span>
+						<input type="text" name="" id="" value="123456789" />
+					</li>
+					<li>
+						<span class="left_text">附件单据数</span>
+						<input type="text" name="" id="" style="width: 170px;" />
+					</li>
+					<li>
+						<span class="left_text"><span class="star">*</span>报销类型</span>
+						<select name="">
+							<option value="">报销类型1</option>
+							<option value="">报销类型2</option>
+						</select>
+					</li>
+					<li>
+						<span class="left_text">专项经费</span>
+						<input type="text" name="" id="" class="zxjf" />
+					</li>
+					<li>
+						<span class="left_text">支出方式</span>
+						<select name="">
+							<option value="">支出方式1</option>
+							<option value="">支出方式2</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<table>
+				<tr>
+					<th class="num">序号</th>
+					<th class="bxxm"><span>*</span>报销项目</th>
+					<th class="kjkm"><span>*</span>会计科目</th>
+					<th class="bxje"><span>*</span>报销金额</th>
+					<th class="bz">备注</th>
+				</tr>
+				<tr>
+					<td class="num">
+						1
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+						<input type="text" />
+						<ul class="search">
+							<li>会计科目1</li>
+							<li>会计科目2</li>
+							<li>会计科目3</li>
+							<li>会计科目4</li>
+							<li>会计科目5</li>
+						</ul>
+						<i class="v-refbtn v-img6"></i>
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						2
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						3
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						4
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						5
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						6
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						7
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						8
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						9
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						10
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						11
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						12
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						13
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						14
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						15
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						16
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						17
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						18
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						19
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						20
+					</td>
+					<td class="bxxm">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="kjkm">
+
+					</td>
+					<td class="bxje">
+						<input type="text" name="" id="" value="" />
+					</td>
+					<td class="bz">
+						<input type="text" name="" id="" value="" />
+					</td>
+				</tr>
+			</table>
+			<div class="heji">
+				<ul>
+					<li class="hj">合 计</li>
+					<li class="daxie">
+						123123
+					</li>
+					<li class="xiaoxie">
+						123213
+					</li>
+					<li class="last_heji">
+
+					</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li>
+						制单人<input type="text" value="某某某" disabled="disabled" />
+					</li>
+					<li>
+						审核人<input type="text" value="某某某" disabled="disabled" />
+					</li>
+					<li>
+						审核日期<input type="text" value="2017-05-08" disabled="disabled" />
+					</li>
+					<li>
+						打印次数<input type="text" value="5" disabled="disabled" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="alert_box">
+			<div class="title">
+				<span>X</span> 科目类别
+			</div>
+			<div class="ct">
+				<div class="left">
+					<ul class="t-tree">
+						<li>
+							<div class="t-tree-node-el t-tree-node-collapse">
+								<span class="t-tree-arrow"></span>
+								<span class="t-tree-node-icon"></span>
+								<a href="javascript:void(0)" class="t-tree-node-link">
+									<span>一级科目</span>
+								</a>
+							</div>
+							<ul class="t-tree-ct">
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<span class="t-tree-node-icon"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>二级科目</span>
+										</a>
+									</div>
+									<ul class="t-tree-ct">
+										<li>
+											<div class="t-tree-node-el t-tree-node-collapse">
+												<span class="t-tree-arrow"></span>
+												<span class="t-tree-node-icon"></span>
+												<a href="javascript:void(0)" class="t-tree-node-link">
+													<span>三级科目</span>
+												</a>
+											</div>
+											<ul class="t-tree-ct">
+												<li>
+													<div class="t-tree-node-el t-tree-node-collapse">
+														<span class="t-tree-arrow"></span>
+														<span class="t-tree-node-icon"></span>
+														<a href="javascript:void(0)" class="t-tree-node-link">
+															<span>四级科目</span>
+														</a>
+													</div>
+													<ul class="t-tree-ct">
+														<li>
+															<div class="t-tree-node-el t-tree-node-collapse">
+																<span class="t-tree-arrow"></span>
+																<span class="t-tree-node-icon"></span>
+																<a href="javascript:void(0)" class="t-tree-node-link">
+																	<span>五级科目</span>
+																</a>
+															</div>
+															<ul class="t-tree-ct">
+																<li>
+																	<div class="t-tree-node-el t-tree-node-collapse">
+																		<span class="t-tree-arrow"></span>
+																		<span class="t-tree-node-icon"></span>
+																		<a href="javascript:void(0)" class="t-tree-node-link">
+																			<span>六级科目</span>
+																		</a>
+																	</div>
+																	<ul class="t-tree-ct">
+																		<li>
+																			<div class="last_ct">产品（如果下一级没有就去掉前面的图标）</div>
+																		</li>
+																		<li>
+																			<div class="last_ct">产品（如果下一级没有就去掉前面的图标）</div>
+																		</li>
+																	</ul>
+																</li>
+																<li>
+																	<div class="t-tree-node-el t-tree-node-collapse">
+																		<span class="t-tree-arrow"></span>
+																		<span class="t-tree-node-icon"></span>
+																		<a href="javascript:void(0)" class="t-tree-node-link">
+																			<span>六级科目</span>
+																		</a>
+																	</div>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<div class="t-tree-node-el t-tree-node-collapse">
+																<span class="t-tree-arrow"></span>
+																<span class="t-tree-node-icon"></span>
+																<a href="javascript:void(0)" class="t-tree-node-link">
+																	<span>五级科目</span>
+																</a>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="t-tree-node-el t-tree-node-collapse">
+														<span class="t-tree-arrow"></span>
+														<span class="t-tree-node-icon"></span>
+														<a href="javascript:void(0)" class="t-tree-node-link">
+															<span>四级科目</span>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="t-tree-node-el t-tree-node-collapse">
+												<span class="t-tree-arrow"></span>
+												<span class="t-tree-node-icon"></span>
+												<a href="javascript:void(0)" class="t-tree-node-link">
+													<span>三级科目</span>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<span class="t-tree-node-icon"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>二级科目</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="t-tree-node-el t-tree-node-collapse">
+								<span class="t-tree-arrow"></span>
+								<span class="t-tree-node-icon"></span>
+								<a href="javascript:void(0)" class="t-tree-node-link">
+									<span>一级科目</span>
+								</a>
+							</div>
+							<ul class="t-tree-ct">
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<span class="t-tree-node-icon"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>二级科目</span>
+										</a>
+									</div>
+									<ul class="t-tree-ct">
+										<li>
+											<div class="t-tree-node-el t-tree-node-collapse">
+												<span class="t-tree-arrow"></span>
+												<span class="t-tree-node-icon"></span>
+												<a href="javascript:void(0)" class="t-tree-node-link">
+													<span>三级科目</span>
+												</a>
+											</div>
+											<ul class="t-tree-ct">
+												<li>
+													<div class="t-tree-node-el t-tree-node-collapse">
+														<span class="t-tree-arrow"></span>
+														<span class="t-tree-node-icon"></span>
+														<a href="javascript:void(0)" class="t-tree-node-link">
+															<span>四级科目</span>
+														</a>
+													</div>
+													<ul class="t-tree-ct">
+														<li>
+															<div class="t-tree-node-el t-tree-node-collapse">
+																<span class="t-tree-arrow"></span>
+																<span class="t-tree-node-icon"></span>
+																<a href="javascript:void(0)" class="t-tree-node-link">
+																	<span>五级科目</span>
+																</a>
+															</div>
+															<ul class="t-tree-ct">
+																<li>
+																	<div class="t-tree-node-el t-tree-node-collapse">
+																		<span class="t-tree-arrow"></span>
+																		<span class="t-tree-node-icon"></span>
+																		<a href="javascript:void(0)" class="t-tree-node-link">
+																			<span>六级科目</span>
+																		</a>
+																	</div>
+																	<ul class="t-tree-ct">
+																		<li>
+																			<div class="last_ct">产品（如果下一级没有就去掉前面的图标）</div>
+																		</li>
+																		<li>
+																			<div class="last_ct">产品（如果下一级没有就去掉前面的图标）</div>
+																		</li>
+																	</ul>
+																</li>
+																<li>
+																	<div class="t-tree-node-el t-tree-node-collapse">
+																		<span class="t-tree-arrow"></span>
+																		<span class="t-tree-node-icon"></span>
+																		<a href="javascript:void(0)" class="t-tree-node-link">
+																			<span>六级科目</span>
+																		</a>
+																	</div>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<div class="t-tree-node-el t-tree-node-collapse">
+																<span class="t-tree-arrow"></span>
+																<span class="t-tree-node-icon"></span>
+																<a href="javascript:void(0)" class="t-tree-node-link">
+																	<span>五级科目</span>
+																</a>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="t-tree-node-el t-tree-node-collapse">
+														<span class="t-tree-arrow"></span>
+														<span class="t-tree-node-icon"></span>
+														<a href="javascript:void(0)" class="t-tree-node-link">
+															<span>四级科目</span>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="t-tree-node-el t-tree-node-collapse">
+												<span class="t-tree-arrow"></span>
+												<span class="t-tree-node-icon"></span>
+												<a href="javascript:void(0)" class="t-tree-node-link">
+													<span>三级科目</span>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<span class="t-tree-node-icon"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>二级科目</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<table class="title_table">
+						<tr>
+							<th class="xh">序号</th>
+							<th class="kmbm">科目编码</th>
+							<th class="kmmc">科目名称</th>
+							<th class="zjm">助记码</th>
+						</tr>
+				</table>
+				<div class="right">
+					<table class="content_table">
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						<tr>
+							<td class="xh">1</td>
+							<td class="kmbm">222222222222222</td>
+							<td class="kmmc">内容</td>
+							<td class="zjm">内容</td>
+						</tr>
+						
+					</table>
+				</div>
+			</div>
+			<div class="btn">
+				<input type="button" name="deter" id="deter" value="确认" />
+				<input type="button" name="cancel" id="cancel" value="取消" />
+			</div>
+		</div>
+		<script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+
+				$("#txtBeginDate").calendar({
+
+					controlId: "divDate", // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
+
+					speed: 200, // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
+
+					complement: true, // 是否显示日期或年空白处的前后月的补充,默认：true
+
+					readonly: true, // 目标对象是否设为只读，默认：true
+
+					upperLimit: NaN, // 日期上限，默认：NaN(不限制)
+
+					lowerLimit: NaN, // 日期下限，默认：NaN(不限制)
+
+					callback: function() { // 点击选择日期后的回调函数
+
+					}
+				});
+
+				$("#txtEndDate").calendar();
+//				$(".alert_box").bg_move({
+//					move: '.title',
+//					size: 1
+//				});
+				$('.ct .left,.ct .right').niceScroll({
+					cursorcolor: "#ccc", //#CC0071 光标颜色
+					cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+					touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+					cursorwidth: "5px", //像素光标的宽度
+					cursorborder: "0", // 	游标边框css定义
+					cursorborderradius: "5px", //以像素为光标边界半径
+					autohidemode: true //是否隐藏滚动条
+				});
+
+			});
+		</script>
+	</body>
+
+</html>
