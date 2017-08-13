@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<link rel="stylesheet" type="text/css" href="css/kemu.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Menu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pinying.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/kemu.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="left">
+				<div class="t-tree-node-el t-tree-node-expand">
+					<span class="t-tree-arrow"></span>
+					<span class="t-tree-node-icon"></span>
+					<a href="javascript:void(0)" class="t-tree-node-link t-tree-node-el-selected">
+						<span>会计科目</span>
+					</a>
+				</div>
+				<ul class="t-tree">
+					<li class="shouru" data-id="10001">
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span>收入</span>
+							</a>
+						</div>
+
+					</li>
+					<li class="zhichu" data-id="10002">
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span>支出</span>
+							</a>
+						</div>
+					</li>
+					<li class="zichan" data-id="10003">
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span>资产</span>
+							</a>
+						</div>
+					</li>
+					<li class="gongtong" data-id="10004">
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span>共同</span>
+							</a>
+						</div>
+					</li>
+					<li class="fuzhai" data-id="10005">
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span>负债</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="title">
+					<ul>
+						<li class="xz">新增</li>
+						<li class="xg">修改</li>
+						<li class="sc">删除</li>
+						<li class="cz">查找</li>
+						<li class="tc">退出</li>
+					</ul>
+				</div>
+				<table>
+					<tr>
+						<th class="qx">
+							<input type="checkbox" name="qx" id="qx" value="" class="qx" />
+						</th>
+						<th class="xh">序号</th>
+						<th class="bm">科目编码</th>
+						<th class="xm">科目名称</th>
+						<th class="lb">科目类别</th>
+						<th class="zjm">助记码</th>
+					</tr>
+					<tr>
+						<td class="td_input">
+							<input type="checkbox" />
+						</td>
+						<td>1</td>
+						<td class="td_bianma">100011</td>
+						<td class="td_xingming">差旅费</td>
+						<th class="td_leibie">支出</th>
+						<td class="td_zhujima">CLF</td>
+					</tr>
+				</table>
+				<div class="page">
+					<div class="page_box">
+						<ul>
+							<li>上一页</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>下一页</li>
+						</ul>
+						<div class="page_right">
+							共<span>3页</span> &nbsp;&nbsp;&nbsp;到第&nbsp;
+							<input type="text" class="text_input">&nbsp; 页
+							<input type="button" value="确定" class="btn_input">
+						</div>
+					</div>
+				</div>
+				<div id="alert_box_add">
+					<div class="title">
+						<span>X</span> 会计科目
+					</div>
+					<div class="content">
+						<div class="ct">
+							<ul>
+								<li class="">
+									<span>*</span>
+									<span>添加类型</span>
+									<select name="" class="bumen">
+										<option value="请选择">请选择</option>
+										<option value="fenlei">添加分类</option>
+										<option value="kemu">添加科目</option>
+									</select>
+								</li>
+								<li>
+									<span>*</span>
+									<span>科目编码</span>
+									<input type="text" class="bianma" />
+								</li>
+								<li>
+									<span>*</span>
+									<span>科目名称</span>
+									<input type="text" class="xingming"/>
+								</li>
+								<li>
+									<span>*</span>
+									<span>助记码</span>
+									<input type="text" class="zhuji" />
+								</li>
+							</ul>
+							<div class="bot">
+								<input type="button" name="" class="qd" value="确认">
+								<input type="button" name="" class="qx" value="取消">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="chazhao">
+					<div class="title">
+						<span>X</span> 查询条件
+					</div>
+					<ul>
+						<li>
+							<span>职员编码</span>
+							<input type="text" class="bianma" />
+						</li>
+						<li>
+							<span>助记码</span>
+							<input type="text" class="bianma" />
+						</li>
+						<li>
+							<span>员工姓名</span>
+							<input type="text" class="bianma" />
+						</li>
+					</ul>
+					<div class="bot">
+						<input type="button" name="" class="qd" value="确认" />
+						<input type="button" name="" class="qx" value="取消" />
+					</div>
+				</div>
+				<div id="warning">
+					<div class="title">
+						<span>X</span> 提示
+					</div>
+					<div class="text">
+						您确定要删除该数据吗？
+					</div>
+					<div class="bot">
+						<input type="button" name="" class="qd" value="确认" />
+						<input type="button" name="" class="qx" value="取消" />
+					</div>
+				</div>
+				<div id="alert_box_x">
+					<div class="title">
+						<span>X</span> 会计科目
+					</div>
+					<div class="content">
+						<div class="ct">
+							<ul>
+								<li>
+									<span>*</span>
+									<span>科目类别</span>
+									<select name="" class="bumen">
+										<option value="请选择">请选择</option>
+										<option value="收入">收入</option>
+										<option value="支出">支出</option>
+										<option value="资产">资产 </option>
+										<option value="共同">共同</option>
+										<option value="负债">负债</option>
+									</select>
+								</li>
+								<li>
+									<span>*</span>
+									<span>科目编码</span>
+									<input type="text" class="bianma" />
+								</li>
+								<li>
+									<span>*</span>
+									<span>科目名称</span>
+									<input type="text" class="xingming"/>
+								</li>
+								<li>
+									<span>*</span>
+									<span>助记码</span>
+									<input type="text" class="zhuji" />
+								</li>
+							</ul>
+							<div class="bot">
+								<input type="button" name="" class="qd" value="确认">
+								<input type="button" name="" class="qx" value="取消">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

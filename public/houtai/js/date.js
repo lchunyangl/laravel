@@ -315,7 +315,7 @@ jQuery.fn.extend({
         function w() {
             re = /(\d\d\d\d)(\W)?(\d\d)(\W)?(\d\d)/g;
             var a = n.val();
-//          a = a.replace(re, "$1/$3/$5@").split("@")[0];
+            a = a.replace(re, "$1/$3/$5@").split("@")[0];
             return new Date(a)
         }
         function F(a) {

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<link rel="stylesheet" type="text/css" href="css/quanxian.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Menu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pinying.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/quanxian.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="left">
+				<!--<div class="t-tree-node-el t-tree-node-expand">
+					<span class="t-tree-arrow"></span>
+					<span class="t-tree-node-icon"></span>
+					<a href="javascript:void(0)" class="t-tree-node-link t-tree-node-el-selected">
+						<span>权限组</span>
+					</a>
+				</div>-->
+				<ul class="t-tree-ct">
+					<li>
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span class="quanxianzu">自定义权限组一</span>
+							</a>
+						</div>
+						<ul class="t-tree-ct">
+							<li>
+								<div class="t-tree-node-el t-tree-node-collapse">
+									<span class="t-tree-node-icon"></span>
+									<a href="javascript:void(0)" class="t-tree-node-link">
+										<span class="renyuan">张三</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="t-tree-node-el t-tree-node-collapse">
+									<span class="t-tree-node-icon"></span>
+									<a href="javascript:void(0)" class="t-tree-node-link">
+										<span class="renyuan">李四</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="t-tree-node-el t-tree-node-collapse">
+							<span class="t-tree-arrow"></span>
+							<span class="t-tree-node-icon"></span>
+							<a href="javascript:void(0)" class="t-tree-node-link">
+								<span class="quanxianzu">自定义权限组二</span>
+							</a>
+						</div>
+						<ul class="t-tree-ct">
+							<li>
+								<div class="t-tree-node-el t-tree-node-collapse">
+									<span class="t-tree-node-icon"></span>
+									<a href="javascript:void(0)" class="t-tree-node-link">
+										<span class="renyuan">张三</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="t-tree-node-el t-tree-node-collapse">
+									<span class="t-tree-node-icon"></span>
+									<a href="javascript:void(0)" class="t-tree-node-link">
+										<span class="renyuan">李四</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<fieldset>
+					<legend>权限组编辑</legend>
+					<input type="button" name="" id="" value="新增" class="qx_add hover" />
+					<input type="button" name="" id="" value="修改" class="qx_rep" disabled="disabled" />
+					<input type="button" name="" id="" value="删除" class="qx_del" disabled="disabled" />
+					<input type="button" name="" id="shouquan" value="授权" disabled="disabled" />
+				</fieldset>
+				<fieldset>
+					<legend>用户组编辑</legend>
+					<input type="button" name="" id="" value="新增" class="yh_add" disabled="disabled" />
+					<input type="button" name="" id="" value="修改" class="yh_rep" disabled="disabled" />
+					<input type="button" name="" id="" value="删除" class="yh_del" disabled="disabled" />
+				</fieldset>			
+				<div id="alert_box">
+					<div class="title">
+						<span>X</span> 职员
+					</div>
+					<div class="content">
+						<div class="caozuo">
+							<ul>
+								<li class="prev">上张</li>
+								<li class="next">下张</li>
+								<li class="baocun">保存</li>
+								<li class="out">退出</li>
+							</ul>
+						</div>
+						<div class="ct">
+							<ul>
+								<li>
+									<span>*</span>
+									<span>部门编码</span>
+									<input type="text" class="bianma" />
+								</li>
+								<li>
+									<span>*</span>
+									<span>部门名称</span>
+									<select name="" class="bumen">
+										<option value="请选择">请选择</option>
+										<option value="公安部">公安部</option>
+										<option value="部门一">部门一</option>
+										<option value="部门二">部门二</option>
+										<option value="部门三">部门三</option>
+										<option value="部门四">部门四</option>
+										<option value="部门五">部门五</option>
+										<option value="部门六">部门六</option>
+										<option value="部门七">部门七</option>
+										<option value="部门八">部门八</option>
+										<option value="部门九">部门九</option>
+									</select>
+								</li>
+								<li class="">
+									<span>*</span>
+									<span>助记码</span>
+									<input type="text" id="zhuji" />
+								</li>
+								<li>
+									<span>*</span>
+									<span>是否停用</span>
+									<select name="" class="zysx">
+										<option value="请选择">请选择</option>
+										<option value="正式">否</option>
+										<option value="劳务派遣">是</option>
+									</select>
+								</li>
+								<!--<li>
+									<span>*</span>
+									<span>职员状态</span>
+									<select name="" class="zyzt">
+										<option value="请选择">请选择</option>
+										<option value="在职">在职</option>
+										<option value="离职">离职</option>
+									</select>
+								</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="qxz">
+					<div class="title">
+						<span>X</span>权限组组管理
+					</div>
+					<ul>
+						<li>
+							<span><span>*</span> 用户组名称</span>
+							<input type="text" class="bianma" />
+						</li>
+						<li>
+							<span>备注</span>
+							<input type="text" class="beizhu" />
+						</li>
+					</ul>
+					<div class="bot">
+						<input type="button" name="" class="qd" value="确认" />
+						<input type="button" name="" class="qx" value="取消" />
+					</div>
+				</div>
+				<div id="ryz">
+					<div class="title">
+						<span>X</span>用户组管理
+					</div>
+					<div class="text">
+						<ul>
+							<li>
+								<span><span>*</span>用户编码</span>
+								<input type="text" class="bianma" value="修改用户权限将显示用户编码" />
+							</li>
+							<li>
+								<span><span>*</span>用户姓名</span>
+								<input type="text" class="beizhu" value="修改用户权限将显示用户姓名" />
+							</li>
+							<li>
+								<span><span>*</span>权限组</span>
+								<select name="">
+									<option value="部门一">这里显示用户当前权限组</option>
+									<option value="部门一">权限一</option>
+									<option value="部门一">权限一</option>
+									<option value="部门一">权限一</option>
+									<option value="部门一">权限一</option>
+								</select>
+							</li>
+							<li>
+								<span><span>*</span>密码</span>
+								<input type="password" class="mima" value="修改用户权限将显示用户密码" />
+							</li>
+							<li>
+								<span><span>*</span>确认密码</span>
+								<input type="password" class="qrmima" value="修改用户权限将显示用户密码" />
+							</li>
+							<li style="text-align: left;margin-left: 20px;">
+								<span>停用</span>
+								<input type="checkbox" class="tingyong" />
+							</li>
+						</ul>
+					</div>
+					<div class="bot">
+						<input type="button" name="" class="qd" value="保存" />
+						<input type="button" name="" class="qx" value="退出" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--新增人员权限弹窗-->
+		<div class="alert_box">
+			<div class="title">
+				<span>X</span> 用户权限
+			</div>
+			<div class="ct">
+				<div class="left">
+					<ul class="t-tree">
+						<li>
+							<div class="t-tree-node-el t-tree-node-collapse">
+								<span class="t-tree-arrow"></span>
+								<span class="t-tree-node-icon"></span>
+								<a href="javascript:void(0)" class="t-tree-node-link">
+									<span>部门</span>
+								</a>
+							</div>
+							<ul class="t-tree-ct">
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>部门一</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>部门二</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>部门三</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>部门四</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="table_title">
+						<table>
+							<thead>
+								<tr>
+									<th>
+										<div class="qx">
+											<input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="xh">
+											序号
+										</div>
+									</th>
+									<th class="kmbm">
+										<div class="kmbm">
+											职员编码
+										</div>
+									</th>
+									<th class="kmmc">
+										<div class="kmmc">
+											职员姓名
+										</div>
+									</th>
+									<th>
+										<div class="ssbm">
+											所属部门
+										</div>
+									</th>
+									<th class="zjm">
+										助记码
+									</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="content_table">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class="xh">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											职员编码
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											职员姓名
+										</div>
+									</td>
+									<td>
+										<div class="ssbm">
+											所属部门
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xh">
+											2
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											职员编码
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											职员姓名
+										</div>
+									</td>
+									<td>
+										<div class="ssbm">
+											所属部门
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="btn">
+				<input type="button" name="deter" class="deter" value="确认" />
+				<input type="button" name="cancel" class="cancel" value="取消" />
+			</div>
+		</div>
+		<!--操作提示-->
+		<div id="warning">
+			<div class="title">
+				<span>X</span> 提示
+			</div>
+			<div class="text">
+				您确定要删除该数据吗？
+			</div>
+			<div class="bot">
+				<input type="button" name="" class="qd" value="确认" />
+				<input type="button" name="" class="qx" value="取消" />
+			</div>
+		</div>
+
+		<!--授权弹框-->
+		<div class="shouquan_box">
+			<div class="title">
+				<span>X</span> 科目类别
+			</div>
+			<div class="ct">
+				<div class="left">
+					<ul class="t-tree">
+						<li>
+							<div class="t-tree-node-el t-tree-node-collapse">
+								<span class="t-tree-arrow"></span>
+								<span class="t-tree-node-icon"></span>
+								<a href="javascript:void(0)" class="t-tree-node-link">
+									<span>授权管理</span>
+								</a>
+							</div>
+							<ul class="t-tree-ct">
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>财务文档管理</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>薪资自助查询</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>财务经费管理</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>资产编码管理</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="t-tree-node-el t-tree-node-collapse">
+										<span class="t-tree-arrow"></span>
+										<a href="javascript:void(0)" class="t-tree-node-link">
+											<span>办公耗品管理</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="table_title">
+						<table>
+							<thead>
+								<tr>
+									<th>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</th>
+									<th>
+										<div class="mingcheng">
+											功能点名称
+										</div>
+									</th>
+									<th>
+										<div class="chakan">
+											<span>查看</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="xinzeng">
+											<span>新增</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="xiugai">
+											<span>修改</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="shanchu">
+											<span>删除</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="shenhe">
+											<span>审核</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="qishen">
+											<span>弃审</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="dayin">
+											<span>打印</span><input type="checkbox" />
+										</div>
+									</th>
+									<th>
+										<div class="daochu">
+											<span>导出</span><input type="checkbox" />
+										</div>
+									</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="content_table">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</td>
+									<td>
+										<div class="mingcheng">
+											经费报销
+										</div>
+									</td>
+									<td>
+										<div class="chakan">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xinzeng">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xiugai">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shanchu">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shenhe">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="qishen">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="dayin">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="daochu">
+											<input type="checkbox" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</td>
+									<td>
+										<div class="mingcheng">
+											报销单管理
+										</div>
+									</td>
+									<td>
+										<div class="chakan">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xinzeng">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xiugai">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shanchu">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shenhe">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="qishen">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="dayin">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="daochu">
+											<input type="checkbox" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</td>
+									<td>
+										<div class="mingcheng">
+											经费报销查询
+										</div>
+									</td>
+									<td>
+										<div class="chakan">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xinzeng">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xiugai">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shanchu">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shenhe">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="qishen">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="dayin">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="daochu">
+											<input type="checkbox" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</td>
+									<td>
+										<div class="mingcheng">
+											办案专项经费查询
+										</div>
+									</td>
+									<td>
+										<div class="chakan">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xinzeng">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xiugai">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shanchu">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shenhe">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="qishen">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="dayin">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="daochu">
+											<input type="checkbox" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</td>
+									<td>
+										<div class="mingcheng">
+											图文分析
+										</div>
+									</td>
+									<td>
+										<div class="chakan">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xinzeng">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xiugai">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shanchu">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shenhe">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="qishen">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="dayin">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="daochu">
+											<input type="checkbox" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="qx">
+											<input type="checkbox" name="" id="" value="" />
+										</div>
+									</td>
+									<td>
+										<div class="mingcheng">
+											等等
+										</div>
+									</td>
+									<td>
+										<div class="chakan">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xinzeng">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="xiugai">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shanchu">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="shenhe">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="qishen">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="dayin">
+											<input type="checkbox" />
+										</div>
+									</td>
+									<td>
+										<div class="daochu">
+											<input type="checkbox" />
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="btn">
+				<input type="button" name="deter" class="deter" value="确认" />
+				<input type="button" name="cancel" class="cancel" value="取消" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".alert_box,.shouquan_box").bg_move({
+			move: '.title',
+			size: 0
+		});
+	</script>
+
+</html>

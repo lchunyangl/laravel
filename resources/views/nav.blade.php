@@ -81,7 +81,8 @@
                         <a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span
                                     class="nav-text">财务文档管理</span></a>
                         <ul class="subnav">
-                            <li class="subnav-li" href="{{route('main')}}" data-id="8"><a href="javascript:;" class="ue-clear"><i
+                            <li class="subnav-li" href="{{route('main')}}" data-id="8"><a href="javascript:;"
+                                                                                          class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">财务文档管理1</span></a></li>
                             <li class="subnav-li" href="form.html" data-id="9"><a href="javascript:;"
                                                                                   class="ue-clear"><i
@@ -94,12 +95,12 @@
 
                         </ul>
                     </li>
-                    <li class="nav-li current">
+                    <li class="nav-li">
                         <a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span
                                     class="nav-text">薪资自助查询</span></a>
                         <ul class="subnav">
-                            <li class="subnav-li current" href="{{route('main')}}" data-id="1111"><a href="javascript:;"
-                                                                                              class="ue-clear"><i
+                            <li class="subnav-li" href="index.html" data-id="1111"><a href="javascript:;"
+                                                                                      class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">薪资自助查询1</span></a></li>
                             <li class="subnav-li" href="form.html" data-id="2"><a href="javascript:;"
                                                                                   class="ue-clear"><i
@@ -121,10 +122,10 @@
                                             class="subnav-icon"></i><span class="subnav-text">报销单管理</span></a></li>
                             <li class="subnav-li" data-id="7"><a href="javascript:;" class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">经费报销查询</span></a></li>
+                            <li class="subnav-li" data-id="21"><a href="javascript:;" class="ue-clear"><i
+                                            class="subnav-icon"></i><span class="subnav-text">包干经费查询</span></a></li>
                             <li class="subnav-li" data-id="20"><a href="javascript:;" class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">办案专项经费查询</span></a></li>
-                            <li class="subnav-li" data-id="21"><a href="javascript:;" class="ue-clear"><i
-                                            class="subnav-icon"></i><span class="subnav-text">图文分析</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-li last-nav-li">
@@ -155,17 +156,23 @@
                         <a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span
                                     class="nav-text">系统后台管理</span></a>
                         <ul class="subnav">
-                            <li class="subnav-li" data-id="28"><a href="javascript:;" class="ue-clear"><i
-                                            class="subnav-icon"></i><span class="subnav-text">人员设置</span></a></li>
-                            <li class="subnav-li" data-id="29"><a href="javascript:;" class="ue-clear"><i
-                                            class="subnav-icon"></i><span class="subnav-text">权限管理</span></a></li>
-                            <li class="subnav-li" data-id="30"><a href="javascript:;" class="ue-clear"><i
+                            <li class="subnav-li" data-id="28" href="{{route('bumen.index')}}"><a href="javascript:;"
+                                                                                                  class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">部门设置</span></a></li>
-                            <li class="subnav-li" data-id="31"><a href="javascript:;" class="ue-clear"><i
+                            <li class="subnav-li" data-id="29" href="quanxian.html"><a href="javascript:;"
+                                                                                       class="ue-clear"><i
+                                            class="subnav-icon"></i><span class="subnav-text">权限管理</span></a></li>
+                            <li class="subnav-li" data-id="30" href="{{route('renyuan.index')}}"><a href="javascript:;"
+                                                                                                    class="ue-clear"><i
+                                            class="subnav-icon"></i><span class="subnav-text">人员设置</span></a></li>
+                            <li class="subnav-li" data-id="31" href="{{route('baoxiaolx.index')}}"><a href="javascript:;"
+                                                                                             class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">报销类型</span></a></li>
-                            <li class="subnav-li" data-id="32"><a href="javascript:;" class="ue-clear"><i
+                            <li class="subnav-li" data-id="32" href="{{route('kemu.index')}}"><a href="javascript:;"
+                                                                                                 class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">会计科目</span></a></li>
-                            <li class="subnav-li" data-id="33"><a href="javascript:;" class="ue-clear"><i
+                            <li class="subnav-li" data-id="33" href="zhuanxiangjingfei.html"><a href="javascript:;"
+                                                                                                class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">专项经费</span></a></li>
                         </ul>
                     </li>
@@ -173,7 +180,8 @@
                         <a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span
                                     class="nav-text">系统后台管理</span></a>
                         <ul class="subnav">
-                            <li class="subnav-li" data-id="1" href="{{route('main')}}"><a href="javascript:;" class="ue-clear"><i
+                            <li class="subnav-li" data-id="1" href="{{route('main')}}"><a href="javascript:;"
+                                                                                          class="ue-clear"><i
                                             class="subnav-icon"></i><span class="subnav-text">便捷操作</span></a></li>
                         </ul>
                     </li>

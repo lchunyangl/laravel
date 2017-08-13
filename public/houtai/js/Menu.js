@@ -93,14 +93,14 @@ Menu.prototype._close = function($this, flag){
 
 Menu.prototype._bindEvent = function(){
 	var self = this;
-	
+
 	this.nav.on('click', 'li', function(){
 		
 		if($(this).hasClass('current') || $(this).hasClass('subnav-li')){
 			return false;	
 		}
-		$(this).addClass('current').siblings().removeClass("current").find(".subnav").hide().end().end().find(".subnav").show();
-		
+//		$(this).addClass('current').siblings().removeClass("current").find(".subnav").hide().end().end().find(".subnav").show();
+		$(this).children('.subnav').slideToggle()
 	});
 	
 	
@@ -113,7 +113,6 @@ Menu.prototype._bindEvent = function(){
 		self._close($(this).parents('li'));
 		return false;
 	});
-	
 	this.tab.on('click', 'li', function(){
 		self._show($(this));
 		return false;

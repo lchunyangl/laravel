@@ -64,7 +64,7 @@
 }
 
 .content ul li .zxjf {
-	width: 430px;
+	width: 424px;
 }
 
 .content table {
@@ -557,7 +557,7 @@
 	min-width: auto;
 }
 .alert_box .title span{
-	color: #999;
+	color: white;
 	float: right;
 	margin-right: 20px;
 	cursor: pointer;
@@ -575,9 +575,9 @@
 	height: 482px;
 	border: 1px solid #ccc;
 	float: left;
-}
-.t-tree-arrow:hover{
-	background-position: -79px 50%!important;
+	overflow: scroll;
+	overflow-x: auto;
+	overflow-y: auto;
 }
 .t-tree-node-link {
     display: inline-block;
@@ -605,54 +605,67 @@
 .alert_box .ct .right{
 	float: right;
 	width: 560px;
-	height: 452px;
-	border-bottom: 1px solid #ccc;
-	position: relative;
-	top: -1px;
-}
-.alert_box .ct .right table th,.alert_box .ct .right table td{
 	border: 1px solid #ccc;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-}
-.alert_box .ct .xh{
-	width: 30px;
-}
-.alert_box .ct .kmbm{
-	width: 130px;
-}
-.alert_box .ct .kmmc,.alert_box .ct .zjm{
-	width: 200px;
-}
-.title_table{
-	float: right;
-	width: 560px;
-	position: relative;
-	z-index: 1;
-	background: white;
-}
-.title_table th{
-	border: 1px solid #ccc;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
 	
 }
-.alert_box .ct .title_table .kmbm{
-	width: 131px;
+.table_title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.table_title table thead tr th{
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
+.content_table table tbody tr td{
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	text-align: center;
+	height: 30px;
+}
+.xh{
+	width: 30px;
+	text-align: center!important;
+}
+.kmbm{
+	width: 150px;	
+}
+.kmmc{
+	width: 220px;
+}
+.zjm{
+	width: 100%;
+	border-right: none!important;
+}
+.content_table{
+	width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 452px;
 }
 .alert_box .btn{
-	position: absolute;
-	bottom: 10px;
-	right: 0px;
+	float: right;
+	position: relative;
+	bottom: 5px;
 }
 .alert_box .btn input{
-	width: 80px;
-    height: 30px;
+	width: 70px;
+    height: 25px;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 23px;
     margin: 0 15px;
     cursor: pointer;
+    border: none;
+    background: #38a3d5;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
 }
-
+.alert_box .title{
+	background: #38a3d5;
+}
+#cancel{
+	background: #ccc;
+}

@@ -6,16 +6,14 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/jingfeibaoxiao.css" />
 		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<link rel="stylesheet" type="text/css" href="css/jcDate.css"/>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/date.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jQuery-jcDate.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jingfeibaoxiao.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
 		<title>无标题文档</title>
 		<!--[if lte IE 8]>
 			<style type="text/css">
-				.content ul li .zxjf {
-					width: 431px;
-				}
 				.bumen_input{
 				width: 169px;
 			}
@@ -73,7 +71,7 @@
 					</li>
 					<li style="position: relative;z-index: 3;">
 						<span class="left_text"><span class="star">*</span>日期</span>
-						<input type="text" name="" id="txtBeginDate" value="" />
+						<input type="text" name="" class="jcDate" value="" />
 					</li>
 					<li>
 						<span class="left_text"><span class="star">*</span>单据编号</span>
@@ -734,138 +732,557 @@
 						</li>
 					</ul>
 				</div>
-				<table class="title_table">
-						<tr>
-							<th class="xh">序号</th>
-							<th class="kmbm">科目编码</th>
-							<th class="kmmc">科目名称</th>
-							<th class="zjm">助记码</th>
-						</tr>
-				</table>
 				<div class="right">
-					<table class="content_table">
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						<tr>
-							<td class="xh">1</td>
-							<td class="kmbm">222222222222222</td>
-							<td class="kmmc">内容</td>
-							<td class="zjm">内容</td>
-						</tr>
-						
-					</table>
+					<div class="table_title">
+						<table>
+							<thead>
+								<tr>
+									<th>
+										<div class="xh">
+											序号
+										</div>
+									</th>
+									<th class="kmbm">
+										<div class="kmbm">
+											科目编码
+										</div>
+									</th>
+									<th class="kmmc">
+										<div class="kmmc">
+											科目名称
+										</div>
+									</th>
+									<th class="zjm">
+										助记码
+									</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="content_table">
+						<table>
+							<tbody>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td class="xh">
+										1
+									</td>
+									<td class="kmbm">
+										22222222222222
+									</td>
+									<td class="kmmc">
+										科目名称
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="xh">
+											1
+										</div>
+									</td>
+									<td>
+										<div class="kmbm">
+											22222222222222
+										</div>
+									</td>
+									<td>
+										<div class="kmmc">
+											科目名称
+										</div>
+									</td>
+									<td class="zjm">
+										内容
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 			<div class="btn">
@@ -873,42 +1290,28 @@
 				<input type="button" name="cancel" id="cancel" value="取消" />
 			</div>
 		</div>
-		<script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$(function() {
+				$(".jcDate").jcDate({
 
-				$("#txtBeginDate").calendar({
+					IcoClass: "jcDateIco",
 
-					controlId: "divDate", // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
+					Event: "click",
 
-					speed: 200, // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
+					Speed: 100,
 
-					complement: true, // 是否显示日期或年空白处的前后月的补充,默认：true
+					Left: 0,
 
-					readonly: true, // 目标对象是否设为只读，默认：true
+					Top: 28,
 
-					upperLimit: NaN, // 日期上限，默认：NaN(不限制)
+					format: "-",
 
-					lowerLimit: NaN, // 日期下限，默认：NaN(不限制)
+					Timeout: 100
 
-					callback: function() { // 点击选择日期后的回调函数
-
-					}
 				});
-
-				$("#txtEndDate").calendar();
-//				$(".alert_box").bg_move({
-//					move: '.title',
-//					size: 1
-//				});
-				$('.ct .left,.ct .right').niceScroll({
-					cursorcolor: "#ccc", //#CC0071 光标颜色
-					cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
-					touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
-					cursorwidth: "5px", //像素光标的宽度
-					cursorborder: "0", // 	游标边框css定义
-					cursorborderradius: "5px", //以像素为光标边界半径
-					autohidemode: true //是否隐藏滚动条
+				$(".alert_box").bg_move({
+					move: '.title',
+					size: 0
 				});
 
 			});
