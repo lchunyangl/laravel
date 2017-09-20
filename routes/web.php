@@ -11,17 +11,6 @@
 |
 */
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', 'IndexController@index')->name('index');
-    Route::get('nav', 'IndexController@nav')->name('nav');
-    Route::get('main', 'IndexController@main')->name('main');
-
-    Route::resource('bumen', 'BumenController');
-    Route::resource('kemu', 'KemuController');
-    Route::resource('renyuan', 'RenyuanController');
-    Route::resource('baoxiaolx', 'BaoxiaolxController');
+Route::get('/', function () {
+    return view('welcome');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
